@@ -80,6 +80,10 @@ document.addEventListener('DOMContentLoaded', function () {
             if (selectedColor && selectedSize) {
                 message.style.display = 'none';
                 message.textContent = `${product.title} with Color ${selectedColor} and size ${selectedSize} with ${quantity} items added to cart`;
+            } else if (selectedColor) {
+                message.textContent = 'Please select the size';
+            } else if(selectedSize) {
+                message.textContent = 'Please select the color';
             } else {
                 message.textContent = 'Please select the color and size';
             }
@@ -98,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.querySelectorAll('input[name="size"]').forEach(elem => {
                     elem.checked = false;
                 });
-            }, 10000);
+            }, 20000);
         });
     }
 
