@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
+    <title>Category Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Your code goes here -->
+    <div class="container">
+        
+        <div class="product-images">
+            <img id="main-image" src="/images/img1.jpg" alt="Main Product Image">
+            <div class="thumbnail-images">
+                <img id="thumbnail-1" class="product-img" src="/images/img1.jpg" alt="Thumbnail 1">
+                <img id="thumbnail-2" class="product-img" src="/images/img2.jpg" alt="Thumbnail 2">
+                <img id="thumbnail-3" class="product-img" src="/images/img3.jpg" alt="Thumbnail 3">
+                <img id="thumbnail-4" class="product-img" src="/images/img4.jpg" alt="Thumbnail 4">
+            </div>
+        </div>
+
+        <div class="product-details">
+            <h5 id="vendor"></h5>
+            <h1 id="product-name">Product Name</h1>
+            <p class="price">
+                <span id="current-price">$0.00</span>
+                <span id="discount">0% Off</span>
+            </p>
+            <span id="original-price">$0.00</span>
+
+            <hr style="width: 100%; border: 1px solid #E4E4E4;">
+            
+            <div class="colors">
+                <label>Choose a Color:</label>
+                <div id="color-options"></div>
+            </div>
+            
+            <hr style="width: 100%; border: 1px solid #E4E4E4;">
+            
+            <div class="sizes">
+                <label>Choose a Size:</label>
+                <div id="size-options"></div>
+            </div>
+
+            <div class="quantity">
+                    <div class="quantity-item">
+                        <button id="decrease-qty">-</button>
+                        <span id="quantity">1</span>
+                        <button id="increase-qty">+</button></div>
+                    <div id="quantity-item-btn">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" height="24" width="24"><g display="inline"><path d="M12 292.65c-2.199 0-4 1.801-4 4v1H5a1 1 0 0 0-1 1v10c0 2.199 1.801 4 4 4h8c2.199 0 4-1.801 4-4v-10a1 1 0 0 0-1-1h-3v-1c0-2.199-1.801-4-4-4zm0 2c1.125 0 2 .875 2 2v1h-4v-1c0-1.125.875-2 2-2zm-6 5h2v2.979a1 1 0 0 0 1 1 1 1 0 0 0 1-1v-2.979h4v2.979a1 1 0 0 0 1 1 1 1 0 0 0 1-1v-2.979h2v9c0 1.125-.875 2-2 2H8c-1.125 0-2-.875-2-2z" style="line-height:normal;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;text-orientation:mixed;white-space:normal;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal" transform="translate(0 -290.65)" color="#000000" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="medium" font-family="sans-serif" text-decoration="none" letter-spacing="normal" word-spacing="normal" writing-mode="lr-tb" direction="ltr" dominant-baseline="auto" baseline-shift="baseline" text-anchor="start" clip-rule="nonzero" display="inline" overflow="visible" visibility="visible" opacity="1" color-interpolation="sRGB" color-interpolation-filters="linearRGB" vector-effect="none" fill="#ffffff" fill-opacity="1" fill-rule="nonzero" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" stroke-dasharray="none" stroke-dashoffset="0" stroke-opacity="1" color-rendering="auto" image-rendering="auto" shape-rendering="auto" text-rendering="auto" enable-background="accumulate" stop-color="#ffffff" stop-opacity="1" class="fill-000000 stop-color-000000"></path></g></svg><button id="add-to-cart">Add To Cart</button>
+                    </div>
+            </div>
+            
+            <center><div id="msg"></div></center>
+
+            <hr style="width: 100%; border: 1px solid #E4E4E4;">
+            
+            <p id="product-description">Product Description</p>
+        
+        </div>
+    </div>
+    <!-- Happy coding 😊 -->
+    <script src="./script.js"></script>
+    
+</body>
+
+</html>
