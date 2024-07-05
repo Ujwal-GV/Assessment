@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.querySelectorAll('input[name="size"]').forEach(elem => {
                     elem.checked = false;
                 });
-            }, 20000);
+            }, 10000);
         });
     }
 
