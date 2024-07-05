@@ -76,12 +76,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         document.getElementById('add-to-cart').addEventListener('click', () => {
             const message = document.getElementById('msg');
+            message.classList.add('message');
             if (selectedColor && selectedSize) {
-                message.classList.add('message');
                 message.style.display = 'none';
                 message.textContent = `${product.title} with Color ${selectedColor} and size ${selectedSize} with ${quantity} items added to cart`;
             } else {
-                alert('Please select the color and size');
+                message.textContent = 'Please select the color and size';
             }
             message.style.display = 'block';
             setTimeout(() => {
